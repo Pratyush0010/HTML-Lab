@@ -1,80 +1,59 @@
-* {
+*{
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
+    box-sizing: border-box; /* Keeps padding inside the box size */
 }
-
-body {
+body{
     font-family: sans-serif;
-    background-color: #a2a3a4;
-    color: #070404;
-    line-height: 1.6;
+    background-color:#121212;
+    color:#f7f0f0;
+    line-height:2.5;
 }
-
-/* Header */
-.header {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding: 2%;
+.name{
+    display:flex;
+    padding:5%;
+    width:50%;
 }
-
-/* Responsive Container */
-.container {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding: 20px;
+.image{
+    float:left;
+    position: relative;
+}
+.paragraph{
+    display:grid;   
     width: 100%;
+    max-width: 450px;    
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+
+    /* Right alignment */
+    margin-left: auto;
 }
 
-/* Main Content Box */
-#list {
-    background-color: white;
+
+.info{    
+    
     width: 100%;
-    max-width: 900px;          /* Limits width on large screens */
+    max-width: 450px;
     padding: 40px;
     border-radius: 10px;
-    box-shadow: 0 6px 10px rgba(19, 19, 19, 0.1);
-}
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
 
-/* Common Section Styling */
-#name,
-#address,
-#contact,
-#email,
-#education,
-#training {
-    padding: 16px;
-    box-shadow: 0 6px 10px rgba(0,0,0,0.1);
-    margin-bottom: 12px;
-    border-radius: 6px;
-}
+    /* Left alignment */
+    margin-right: auto;
 
-/* Tablet View */
-@media (max-width: 768px) {
-    #list {
+}
+@media (max-width: 450px){
+    .name{
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .paragraph,
+    .info{
+        margin: 0 auto;     /* Center on mobile */
+        max-width: 100%;
+    }
+
+    .info{
         padding: 25px;
-    }
-}
-
-/* Mobile View */
-@media (max-width: 450px) {
-    .container {
-        padding: 10px;
-    }
-
-    #list {
-        padding: 20px;
-    }
-
-    #name,
-    #address,
-    #contact,
-    #email,
-    #education,
-    #training {
-        padding: 12px;
-        margin-bottom: 10px;
-    }
-}
+    }    
+}        
