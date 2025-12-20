@@ -1,0 +1,80 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: sans-serif;
+    background-color: #a2a3a4;
+    color: #070404;
+    line-height: 1.6;
+}
+
+/* Header */
+.header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 2%;
+}
+
+/* Responsive Container */
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    width: 100%;
+}
+
+/* Main Content Box */
+#list {
+    background-color: white;
+    width: 100%;
+    max-width: 900px;          /* Limits width on large screens */
+    padding: 40px;
+    border-radius: 10px;
+    box-shadow: 0 6px 10px rgba(19, 19, 19, 0.1);
+}
+
+/* Common Section Styling */
+#name,
+#address,
+#contact,
+#email,
+#education,
+#training {
+    padding: 16px;
+    box-shadow: 0 6px 10px rgba(0,0,0,0.1);
+    margin-bottom: 12px;
+    border-radius: 6px;
+}
+
+/* Tablet View */
+@media (max-width: 768px) {
+    #list {
+        padding: 25px;
+    }
+}
+
+/* Mobile View */
+@media (max-width: 450px) {
+    .container {
+        padding: 10px;
+    }
+
+    #list {
+        padding: 20px;
+    }
+
+    #name,
+    #address,
+    #contact,
+    #email,
+    #education,
+    #training {
+        padding: 12px;
+        margin-bottom: 10px;
+    }
+}
