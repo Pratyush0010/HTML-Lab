@@ -1,0 +1,104 @@
+*{
+     margin:0;
+    padding:0;
+    box-sizing: border-box;    
+}
+body{
+        background-color: black;
+        color: white;
+        font-family: 'Segoe UI', Arial, sans-serif;
+        min-height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        min-height: 100vh;
+        
+}
+.stopwatch-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 40px;
+    width: 100%;
+}
+
+#plus-btn {
+    order: 1;
+    font-size: 5rem;
+    font-weight: bold;
+    color: white;
+    margin: 0;
+    padding: 0;   
+    border: none;
+    cursor: pointer;
+}
+
+#time-display {
+    order: 2;
+    font-size: 8rem;
+    color: white;
+    font-weight: bold;
+    letter-spacing: 10px;
+    margin: 0;
+    padding: 0;
+}
+
+#minus-btn {
+    order: 3;
+    font-size: 5rem;
+    font-weight: bold;
+    color: white;
+    margin: 0;
+    padding: 0;    
+    border: none;
+    cursor: pointer;
+}
+
+/* Ensure the buttons are vertically centered with the timer */
+#plus-btn, #minus-btn, #time-display {
+    line-height: 1;
+}
+/* Reset button below */
+#reset-btn {
+    font-size: 2.5rem;
+    color: white;    
+    border: none;
+    font-weight: bold;
+    cursor: pointer;
+    position: absolute;
+    bottom:120px;
+    left:560px;
+}
+/* start button below */
+#start-btn {
+    font-size: 2.5rem;    
+    color: white;
+    border: none;
+    font-weight: bold;
+    cursor: pointer;
+    position: absolute;
+    left: 180px;
+    top:120px;
+}
+/* stop button below */
+#stop-btn {
+    font-size: 2.5rem;    
+    color: white;
+    border: none;
+    font-weight: bold;
+    cursor: pointer;
+    position: absolute;
+    right: 180px;
+    top:120px;
+}
+/*Lap Button below*/
+#lap-btn {
+    font-size: 2.5rem;    
+    color: white;
+    border: none;
+    font-weight: bold;
+    cursor: pointer;
+    position: absolute;
+    left: 576px;
+    bottom:15px;
+}
